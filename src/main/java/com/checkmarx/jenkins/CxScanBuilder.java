@@ -230,10 +230,10 @@ public class CxScanBuilder extends Builder implements SimpleBuildStep {
         this.isProxy = (isProxy == null) ? true : isProxy;
         this.projectName = (projectName == null) ? buildStep : projectName;
         this.projectId = projectId;
-        this.groupId = (groupId != null && !groupId.startsWith("Provide Checkmarx")) ? groupId : null;
+        this.groupId = groupId;
         this.teamPath = teamPath;
         this.sastEnabled = sastEnabled;
-        this.preset = (preset != null && !preset.startsWith("Provide Checkmarx")) ? preset : null;
+        this.preset = preset;
         this.jobStatusOnError = jobStatusOnError;
         this.presetSpecified = presetSpecified;
         this.exclusionsSetting = exclusionsSetting;
